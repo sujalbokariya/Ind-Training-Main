@@ -1,3 +1,4 @@
+//Challenge 1
 function clickme() {
     var year = prompt("In Which Year you were bron");
     var month = prompt("In Which month you were bron from 1 to 12");
@@ -60,4 +61,50 @@ function catGenerator() {
     var div1 = document.getElementById('flex-box-result-2');
     image.src ="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg";
     div1.appendChild(image);
+}
+
+//Challenge 3
+function rpsGame(yourChoice) {
+    //console.log(yourChoice);
+    var humanChoice, botChoice;
+    humanChoice = yourChoice.id;
+    console.log("Human Choice "+humanChoice)
+    
+    botChoice = botChoiceInWords(botChoiceInNo());
+    console.log("Bot Choice "+botChoice);
+
+    var result3 = rpsCal(humanChoice, botChoice);
+    console.log(result3);
+
+    var answer = rpsResultCal(result3);
+    console.log(answer);
+}
+
+function botChoiceInNo() {
+    return Math.floor(Math.random() * 3);
+}
+
+function botChoiceInWords(number1) {
+    return ['rock','paper','scissors'][number1];
+}
+
+function rpsCal(yourChoice, computerChoice) {
+    var rpsData ={
+        'rock': {'scissors': 1, 'rock': 0.5, 'paper': 0},
+        'paper': {'scissors':0, 'rock':1, 'paper':0.5},
+        'scissors' : {'scissors':0.5, 'rock':0, 'paper':1}
+    };
+    var yourScore = rpsData [yourChoice][computerChoice];
+    var botScore = rpsData [computerChoice][yourChoice];
+    return [yourScore, botScore];
+}
+
+function rpsResultCal( [yourScore, botScore] ) {
+    if (yourScore === 0) {
+        return {'message': 'You Lost!', 'color': 'red'};
+    } else if (yourScore === 1) {
+        return {'message': 'You Won!', 'color': 'green'};
+    } else {
+        return {'message': 'You Tied!', 'color': 'yellow'};
+    }
 }
