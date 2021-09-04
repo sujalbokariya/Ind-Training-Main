@@ -19,7 +19,7 @@
 
 }
 
-.flex-box-container-2, .flex-box-container-3, .flex-box-container-4 {
+.flex-box-container-2, .flex-box-container-3, .flex-box-container-4, .blackjack-row-1, .blackjack_buttons, .blackjack_score {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -41,4 +41,31 @@
 
 .flex-box-container-4 {
     padding: 10px;
+}
+
+.blackjack-row-1, .blackjack_buttons {
+    background: url('https://wallpaperaccess.com/full/397972.jpg') center;
+    color: white;
+}
+
+.blackjack-row-1 div{
+    padding: 10px;
+    border: 1px solid black;
+    flex: 1;
+    height: 350px;
+}
+
+.blackjack_buttons div {
+    padding: 10px;
+    border: 1px solid black;
+    flex: 1;
+}
+
+.blackjack_buttons div {
+    padding: 10px;
+    border: 1px solid black;
+}
+.blackjack_score, table, th, td{
+    padding: 10px;
+    border: 1px solid black;
 }
