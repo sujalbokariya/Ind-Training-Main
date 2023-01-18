@@ -1,0 +1,37 @@
+~mmmmmm`an example
+~mmmmmn`please ignore
+
+
+~mango`A fruit
+~laptop`a elctronic device
+~chair`furniture
+~bag`tool
+~bulb`energy source
+~fan`electronic device
+~Dhruv`A name
+~Raj`A name
+~1`A number
+~0`a number
+~paper`something we can write
+~bench`a furniture
+~roti`a food
+~dosha`a south indian food
+~noodels`a chinese food
+~AC`device to get temp down
+~refrigirator`a device store food for long time
+~hi`greeting
+~hello`greeting
+~hey`greeting
+~eyes`human body part
+~dog`animal
+~cat`animal
+~rabbit`animal
+~algorithm`set of rules to solve problem
+~phone`A telephone
+~a`first letter of english alphabet
+~random`without definite plan
+~Mistitle`to call by a wrong title
+~neeld`A neddle
+~chrome`a web browser
+~algebra`branch of maths
+~nostalgia`a wiseful affectionfor a period in past
